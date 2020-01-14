@@ -7,15 +7,15 @@ const geocode = require('../../weather-app/utils/geocode')
 const port = process.env.PORT || 3000
 
 
-forecast(-75.7088, 44.15455, (error, data) => {
-    console.log('eror', error)
-    console.log('data', data)
-})
+// forecast(-75.7088, 44.15455, (error, data) => {
+//     console.log('eror', error)
+//     console.log('data', data)
+// })
 
-geocode('Boston', (error, data) => {
-    console.log('eror', error)
-    console.log('data', data)
-})
+// geocode('Boston', (error, data) => {
+//     console.log('eror', error)
+//     console.log('data', data)
+// })
 
 console.log(__dirname)
 console.log(path.join(__dirname,'../public'))
