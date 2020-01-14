@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const app = express()
 const forecast = require('../../weather-app/utils/forecast')
 const geocode = require('../../weather-app/utils/geocode')
-
+const port = process.env.PORT || 3000
 
 
 forecast(-75.7088, 44.15455, (error, data) => {
@@ -56,6 +56,6 @@ app.get('/hey',(req, res)=>{
     res.send("k")
 })
 
-app.listen(3000, ()=>{
-    console.log('listening')
+app.listen(port, ()=>{
+    console.log('server is up on port'+port)
 })
